@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 .soan {
+            text-color: white;
+        }
+        
+        /* Navigation bar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #155724;
+    padding: 10px 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.navbar #eduquiz {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.navbar .nav-links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #155724;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a:visited,
+.navbar .nav-links a:active {
+    color: white; /* Maintain the same color */
+}
+
+.navbar .toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    right: 20px; /* Move the toggle button to the right */
+}
+
+/* .navbar .toggle-button:focus {
+    outline: none; /* Remove focus outline */
+}
+ */
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        li.correct {
+            background-color: #d4edda;
+            color: #155724;
+            font-weight: bold;
+        }
+
+        li.incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        button {
+            background-color: #155724;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #128C7E;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #155724;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+
+
+/* Footer styles */
+footer {
+    background-color: #155724;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #ddd;
+}
+
+/* Media query for mobile view */
+@media (min-width: 768px) {
+    .navbar2 {
+        justify-content: space-between;
+    }
+
+    .navbar2 .nav-links {
+        display: flex; /* Show links horizontally on larger screens */
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+    }
+
+    .navbar2 .toggle-button {
+        display: none; /* Hide toggle button on larger screens */
+    }
+
+    .navbar2 .nav-links a {
+        margin: 0 15px;
+    }
+}

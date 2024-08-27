@@ -1,0 +1,61 @@
+h1 {
+    text-align: center;
+    color: #333;
+}
+p {
+    text-align: center;
+    color: #155724;
+    font-weight: bold;
+    
+}
+
+button .show-answer{
+    background-color: #155724;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button-right {
+            float: right; /* Moves the button to the right */
+        }
+        .button-left {
+            background-color: #ff0034;
+            float: left; /* Moves the button to the left */
+        }
+        
+.whatsapp-button {
+            display: inline-block;
+            background-color: #155724; /* WhatsApp green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Darker green on hover */
+        }
+
+.question {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}

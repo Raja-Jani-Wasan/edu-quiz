@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EduQuiz</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main-style.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="logo">
+            <h2>EduQuiz</h2>
+        </div>
+        <button class="toggle-button" onclick="toggleNav()">&#9776;</button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Quizzes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="main-heading">
+            <h1>About Us</h1>
+            <p>Learn more about EduQuiz, our mission, and our team.</p>
+        </div>
+
+        <div class="about-section">
+            <p>Welcome to [EduQuiz], your ultimate destination for MCQs quiz and university entry test preparation. We're dedicated professionals passionate about education, providing a comprehensive platform for students to prepare with confidence. Our website offers:.</p>
+            <br>
+            <ul>
+                <li>Vast MCQs library</li>
+                <li>Interactive quizzes</li>
+                <li>Regular updates</li>
+                <li>User-friendly interface</li>
+            </ul><br>
+            
+            <p>Our goal is to empower students with tools and resources for success. Join our community today and start preparing with confidence! Contact us for any questions or feedback. We're here to help. Explore our website and discover how we can support your academic journey.</p>
+            <br>
+            <h2>Our Team</h2>
+            <p>Meet the team behind EduQuiz:</p>
+            <ul>
+                <li><strong>Raja Jani:</strong> Founder & CEO</li>
+                <li><strong>Shumail Mirani:</strong> WhatsApp Group AdMiN</li>
+                <li><strong>Nadir Mallah:</strong> WhatsApp Channel AdMiN</li>
+                <li><strong>AdMiN:</strong> WhatsApp Group Owner</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <span>&copy; 2024 EduQuiz. All rights reserved.</span>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/XHX6XbJk8qWNqJdg/?mibextid=A7sQZp"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="Facebook"></a>
+            <a href="https://chat.whatsapp.com/EdJgUORYBxfLVrYc4ypttZ"><img src="https://img.icons8.com/fluent/48/000000/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for collapsing navigation -->
+    <script>
+        const navLinks = document.getElementById('nav-links');
+        const toggleButton = document.querySelector('.toggle-button');
+
+        function toggleNav() {
+            navLinks.style.display = (navLinks.style.display === 'flex') ? 'none' : 'flex';
+        }
+
+        function handleClickOutside(event) {
+            if (!navLinks.contains(event.target) && !toggleButton.contains(event.target)) {
+                navLinks.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('click', handleClickOutside);
+    </script>
+    <script src="../main-files/js/dcmd.js"></script>
+    <script src="../main-files/js/dc.js"></script>
+    <script src="../main-files/js/dcc.js"></script>
+    <script src="../main-files/js/drc.js"></script>
+    <script src="../main-files//js/mct.js"></script>
+</body>
+</html>

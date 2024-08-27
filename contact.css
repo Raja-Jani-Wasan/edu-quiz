@@ -1,0 +1,185 @@
+/* Import Google Fonts and apply basic styles */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #155724;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            position: relative;
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .nav-links {
+            display: none; /* Hide navigation links by default */
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #155724;
+            width: 100%;
+            padding: 10px 20px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:visited,
+        .nav-links a:active {
+            color: white; /* Maintain the same color */
+        }
+
+        .navbar .toggle-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Main heading styles */
+        .main-heading {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .contact-form button {
+            background-color: #155724;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-form button:hover {
+            background-color: #128C7E;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #155724;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ddd;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #155724; /* WhatsApp green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Darker green on hover */
+        }
+
+        /* Media query for mobile view */
+        @media (min-width: 768px) {
+            .navbar {
+                justify-content: space-between;
+            }
+
+            .nav-links {
+                display: flex; /* Show links horizontally on larger screens */
+                position: static;
+                flex-direction: row;
+                align-items: center;
+                background-color: transparent;
+                width: auto;
+                padding: 0;
+            }
+
+            .navbar .toggle-button {
+                display: none; /* Hide toggle button on larger screens */
+            }
+
+            .nav-links a {
+                margin: 0 15px;
+            }
+        }
+        
+        
