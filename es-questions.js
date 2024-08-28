@@ -300,12 +300,12 @@ const questions = [
   {
     numb: 28,
     question: "What is the term for water vapor turning into liquid water?",
-    answer: "Rami",
+    answer: "Condensation",
     options: [
-      "Tawaf",
+      "Freezing",
       "Evaporation",
-      "Sa'i",
-      "Tahajjud"
+      "Sublimation",
+      "Condensation"
     ]
   },
   {
