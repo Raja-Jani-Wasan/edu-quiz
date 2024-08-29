@@ -310,7 +310,7 @@ const questions = [
   },
   {
     numb: 29,
-    question: "What is the term for water vapor turning into liquid water?",
+    question: "What is the chemical symbol for the element oxygen?",
     answer: "O",
     options: [
       "O2",
